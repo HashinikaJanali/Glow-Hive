@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GlowHive</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <p>✨ Free shipping on orders over Rs 50 | New customers get 15% off with code GLOW15</p>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo-container">
+        <h1 class="logo">GlowHive</h1>
+        <span class="logo-sub">Beauty Collective</span>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="products.html">Products</a>
+        <a href="blog.html">Blog</a>
+        <div class="nav-icons">
+          <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-bag"></i><span class="cart-count">0</span></a>
+          <a href="login.html" class="user-icon"><i class="fas fa-user"></i></a>
+        </div>
+      </nav>
+      <button class="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Unleash Your <span class="highlight">Natural Glow</span></h2>
+      <p class="subtitle">Premium, clean beauty essentials crafted with care</p>
+      <div class="hero-buttons">
+        <a href="products.html" class="btn btn-primary">Shop Now</a>
+        <a href="blog.html" class="btn btn-secondary">Learn More</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80" alt="GlowHive beauty products">
+    </div>
+  </section>
+
+  <!-- Featured Categories -->
+  <section class="featured-categories">
+    <h3 class="section-title">Explore Our Collections</h3>
+    <div class="categories-grid">
+      <a href="products.html#skincare" class="category-card">
+        <div class="category-image">
+          <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" alt="Skincare">
+        </div>
+        <h4>Skincare</h4>
+        <p>Nourish & protect your skin</p>
+      </a>
+      <a href="products.html#makeup" class="category-card">
+        <div class="category-image">
+          <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" alt="Makeup">
+        </div>
+        <h4>Makeup</h4>
+        <p>Enhance your natural beauty</p>
+      </a>
+      <a href="products.html#haircare" class="category-card">
+        <div class="category-image">
+          <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" alt="Haircare">
+        </div>
+        <h4>Haircare</h4>
+        <p>Luxurious hair solutions</p>
+      </a>
+      <a href="products.html#fragrance" class="category-card">
+        <div class="category-image">
+          <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80" alt="Fragrance">
+        </div>
+        <h4>Fragrance</h4>
+        <p>Signature scents</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Best Sellers -->
+  <section class="best-sellers">
+    <div class="section-header">
+      <h3 class="section-title">Best Sellers</h3>
+      <a href="products.html" class="view-all">View All</a>
+    </div>
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="product-badge">Bestseller</div>
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80" alt="Hydrating Serum">
+        </div>
+        <div class="product-info">
+          <h4>Radiant Glow Serum</h4>
+          <p class="product-desc">Vitamin C enriched hydration</p>
+          <div class="product-price">Rs 1500.00</div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1625772452859-1c03d5bf1137?ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" alt="Lipstick">
+        </div>
+        <div class="product-info">
+          <h4>Matte Lip Color</h4>
+          <p class="product-desc">Long-wearing, nourishing formula</p>
+          <div class="product-price">Rs 850.00</div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-badge">New</div>
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1556228579-15a008a090f7?ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80" alt="Face Cream">
+        </div>
+        <div class="product-info">
+          <h4>Overnight Repair Cream</h4>
+          <p class="product-desc">Wake up to refreshed skin</p>
+          <div class="product-price">Rs 3800.00</div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="about-image">
+      <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80" alt="About GlowHive">
+    </div>
+    <div class="about-content">
+      <h3 class="section-title">Our Philosophy</h3>
+      <p>At GlowHive, we believe beauty should be clean, conscious, and celebrate your unique radiance. Our products are formulated with ethically-sourced, high-performance ingredients that deliver real results.</p>
+      <ul class="about-features">
+        <li><i class="fas fa-leaf"></i> Cruelty-free & vegan</li>
+        <li><i class="fas fa-recycle"></i> Sustainable packaging</li>
+        <li><i class="fas fa-flask"></i> Science-backed formulas</li>
+      </ul>
+      <a href="blog.html#our-story" class="btn btn-outline">Our Story</a>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h3 class="section-title">GlowHive Lovers</h3>
+    <div class="testimonial-slider">
+      <div class="testimonial-card">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-text">"The Radiant Glow Serum transformed my skin! I've never received so many compliments."</p>
+        <p class="testimonial-author">- Sarah J.</p>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-text">"Finally found a lipstick that stays put but doesn't dry out my lips. Obsessed!"</p>
+        <p class="testimonial-author">- Mia T.</p>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <p class="testimonial-text">"Love that GlowHive products are clean but actually work. The overnight cream is magic."</p>
+        <p class="testimonial-author">- David K.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="newsletter-content">
+      <h3>Join the Hive</h3>
+      <p>Subscribe for exclusive offers, beauty tips, and 10% off your first order.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="products.html#skincare">Skincare</a></li>
+          <li><a href="products.html#makeup">Makeup</a></li>
+          <li><a href="products.html#haircare">Haircare</a></li>
+          <li><a href="products.html#fragrance">Fragrance</a></li>
+          <li><a href="products.html#new">New Arrivals</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>About</h4>
+        <ul>
+          <li><a href="blog.html#our-story">Our Story</a></li>
+          <li><a href="blog.html#ingredients">Ingredients</a></li>
+          <li><a href="blog.html#sustainability">Sustainability</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Press</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="blog.html#faq">FAQs</a></li>
+          <li><a href="blog.html#shipping">Shipping & Returns</a></li>
+          <li><a href="blog.html#privacy">Privacy Policy</a></li>
+          <li><a href="blog.html#terms">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <div class="payment-methods">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-amex"></i>
+          <i class="fab fa-cc-paypal"></i>
+          <i class="fab fa-cc-apple-pay"></i>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 GlowHive Beauty Collective. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

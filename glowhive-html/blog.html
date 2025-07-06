@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GlowHive - Beauty Blog & Tips</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <p>✨ Free shipping on orders over $50 | New customers get 15% off with code GLOW15</p>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo-container">
+        <h1 class="logo">GlowHive</h1>
+        <span class="logo-sub">Beauty Collective</span>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="blog.html" class="active">Blog</a>
+        <div class="nav-icons">
+          <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-bag"></i><span class="cart-count">0</span></a>
+          <a href="login.html" class="user-icon"><i class="fas fa-user"></i></a>
+        </div>
+      </nav>
+      <button class="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Blog Hero -->
+  <section class="blog-hero">
+    <div class="container">
+      <h2>The GlowHive Journal</h2>
+      <p>Expert beauty advice, skincare science, and self-care inspiration</p>
+    </div>
+  </section>
+
+  <!-- Blog Categories -->
+  <section class="blog-categories">
+    <div class="container">
+      <div class="category-tabs">
+        <button class="category-btn active">All Articles</button>
+        <button class="category-btn">Skincare</button>
+        <button class="category-btn">Makeup</button>
+        <button class="category-btn">Haircare</button>
+        <button class="category-btn">Wellness</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Article -->
+  <section class="featured-article">
+    <div class="container">
+      <div class="featured-card">
+        <div class="featured-image">
+          <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" alt="Featured Article">
+          <div class="featured-badge">Editor's Pick</div>
+        </div>
+        <div class="featured-content">
+          <div class="article-meta">
+            <span class="category">Skincare</span>
+            <span class="date">June 15, 2025</span>
+            <span class="reading-time">5 min read</span>
+          </div>
+          <h3>The Science Behind Glowing Skin: What Really Works</h3>
+          <p class="excerpt">Discover the clinically-proven ingredients and techniques that deliver real results for radiant skin. We break down the research so you don't have to.</p>
+          <a href="#" class="btn btn-outline">Read Full Article</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Grid -->
+  <section class="blog-section">
+    <div class="container">
+      <div class="section-header">
+        <h3 class="section-title">Latest Articles</h3>
+        <div class="sort-options">
+          <label for="sort-blog">Sort by:</label>
+          <select id="sort-blog">
+            <option value="newest">Newest First</option>
+            <option value="popular">Most Popular</option>
+            <option value="oldest">Oldest First</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="blog-grid">
+        <!-- Article 1 -->
+        <div class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1498843053639-170ffc71d42d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" alt="Morning Routine">
+            <div class="article-meta">
+              <span class="category">Skincare</span>
+              <span class="date">June 10, 2025</span>
+            </div>
+          </div>
+          <div class="blog-content">
+            <h4>5 Steps to a Glowing Morning Routine</h4>
+            <p class="excerpt">Start your day right with these simple and effective morning skincare tips. Your glow-up starts here!</p>
+            <div class="blog-footer">
+              <span class="reading-time">4 min read</span>
+              <a href="#" class="read-more">Read More <i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 2 -->
+        <div class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80" alt="Natural Ingredients">
+            <div class="article-meta">
+              <span class="category">Ingredients</span>
+              <span class="date">June 5, 2025</span>
+            </div>
+          </div>
+          <div class="blog-content">
+            <h4>Best Natural Ingredients for Sensitive Skin</h4>
+            <p class="excerpt">Explore nature's skincare miracles like aloe vera, chamomile, and more for soft, calm skin.</p>
+            <div class="blog-footer">
+              <span class="reading-time">6 min read</span>
+              <a href="#" class="read-more">Read More <i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 3 -->
+        <div class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" alt="Hydrating Products">
+            <div class="article-meta">
+              <span class="category">Skincare</span>
+              <span class="date">May 28, 2025</span>
+            </div>
+          </div>
+          <div class="blog-content">
+            <h4>Top 3 Hydrating Products for Dry Skin</h4>
+            <p class="excerpt">Is your skin feeling thirsty? These are the most loved products by dry-skin babes like you!</p>
+            <div class="blog-footer">
+              <span class="reading-time">5 min read</span>
+              <a href="#" class="read-more">Read More <i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 4 -->
+        <div class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" alt="Makeup Trends">
+            <div class="article-meta">
+              <span class="category">Makeup</span>
+              <span class="date">May 20, 2025</span>
+            </div>
+          </div>
+          <div class="blog-content">
+            <h4>Summer 2025 Makeup Trends to Try Now</h4>
+            <p class="excerpt">From glossy lids to sunset blush, these are the looks dominating this season's beauty scene.</p>
+            <div class="blog-footer">
+              <span class="reading-time">7 min read</span>
+              <a href="#" class="read-more">Read More <i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 5 -->
+        <div class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" alt="Haircare Routine">
+            <div class="article-meta">
+              <span class="category">Haircare</span>
+              <span class="date">May 15, 2025</span>
+            </div>
+          </div>
+          <div class="blog-content">
+            <h4>The Ultimate Haircare Routine for Frizz Control</h4>
+            <p class="excerpt">Say goodbye to frizz with this simple 4-step routine that actually works in humid weather.</p>
+            <div class="blog-footer">
+              <span class="reading-time">8 min read</span>
+              <a href="#" class="read-more">Read More <i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 6 -->
+        <div class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" alt="Self-Care">
+            <div class="article-meta">
+              <span class="category">Wellness</span>
+              <span class="date">May 10, 2025</span>
+            </div>
+          </div>
+          <div class="blog-content">
+            <h4>Self-Care Sunday: Rituals for Inner & Outer Glow</h4>
+            <p class="excerpt">Transform your Sundays with these nourishing practices that benefit both mind and skin.</p>
+            <div class="blog-footer">
+              <span class="reading-time">10 min read</span>
+              <a href="#" class="read-more">Read More <i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination">
+        <a href="#" class="page-nav disabled"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" class="page-number active">1</a>
+        <a href="#" class="page-number">2</a>
+        <a href="#" class="page-number">3</a>
+        <a href="#" class="page-number">4</a>
+        <a href="#" class="page-nav"><i class="fas fa-chevron-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-content">
+        <h3>Get Beauty Insights Directly</h3>
+        <p>Subscribe to our newsletter for exclusive content, early access to articles, and special offers.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="products.html#skincare">Skincare</a></li>
+          <li><a href="products.html#makeup">Makeup</a></li>
+          <li><a href="products.html#haircare">Haircare</a></li>
+          <li><a href="products.html#fragrance">Fragrance</a></li>
+          <li><a href="products.html#new">New Arrivals</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>About</h4>
+        <ul>
+          <li><a href="blog.html#our-story">Our Story</a></li>
+          <li><a href="blog.html#ingredients">Ingredients</a></li>
+          <li><a href="blog.html#sustainability">Sustainability</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Press</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="blog.html#faq">FAQs</a></li>
+          <li><a href="blog.html#shipping">Shipping & Returns</a></li>
+          <li><a href="blog.html#privacy">Privacy Policy</a></li>
+          <li><a href="blog.html#terms">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <div class="payment-methods">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-amex"></i>
+          <i class="fab fa-cc-paypal"></i>
+          <i class="fab fa-cc-apple-pay"></i>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 GlowHive Beauty Collective. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GlowHive - Premium Beauty Products</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <p>✨ Free shipping on orders over Rs 15,000 | New customers get 15% off with code GLOW15</p>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo-container">
+        <h1 class="logo">GlowHive</h1>
+        <span class="logo-sub">Beauty Collective</span>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="blog.html">Blog</a>
+        <div class="nav-icons">
+          <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-bag"></i><span class="cart-count">0</span></a>
+          <a href="login.html" class="user-icon"><i class="fas fa-user"></i></a>
+        </div>
+      </nav>
+      <button class="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Products Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h2>Our Premium Collection</h2>
+      <p>Clean, effective formulas for your most radiant skin</p>
+    </div>
+  </section>
+
+  <!-- Product Filters -->
+  <section class="product-filters">
+    <div class="container">
+      <div class="filter-group">
+        <label for="category">Category:</label>
+        <select id="category">
+          <option value="all">All Products</option>
+          <option value="skincare">Skincare</option>
+          <option value="makeup">Makeup</option>
+          <option value="haircare">Haircare</option>
+          <option value="fragrance">Fragrance</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="sort">Sort by:</label>
+        <select id="sort">
+          <option value="featured">Featured</option>
+          <option value="newest">Newest</option>
+          <option value="price-low">Price: Low to High</option>
+          <option value="price-high">Price: High to Low</option>
+          <option value="rating">Customer Rating</option>
+        </select>
+      </div>
+      <div class="filter-buttons">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Bestsellers</button>
+        <button class="filter-btn">New Arrivals</button>
+        <button class="filter-btn">Sale</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Grid -->
+  <section class="products-section">
+    <div class="container">
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <div class="product-badge">Bestseller</div>
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80" alt="Radiant Glow Serum">
+            <div class="quick-view">Quick View</div>
+          </div>
+          <div class="product-info">
+            <h3>Radiant Glow Serum</h3>
+            <p class="product-desc">Vitamin C enriched hydration</p>
+            <div class="product-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><span>(128)</span>
+            </div>
+            <div class="product-price">Rs 12,600</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1625772452859-1c03d5bf1137?ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" alt="Matte Lip Color">
+            <div class="quick-view">Quick View</div>
+          </div>
+          <div class="product-info">
+            <h3>Matte Lip Color</h3>
+            <p class="product-desc">Long-wearing, nourishing formula</p>
+            <div class="product-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span>(94)</span>
+            </div>
+            <div class="product-price">Rs 8,400</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <div class="product-badge">New</div>
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1556228579-15a008a090f7?ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80" alt="Overnight Repair Cream">
+            <div class="quick-view">Quick View</div>
+          </div>
+          <div class="product-info">
+            <h3>Overnight Repair Cream</h3>
+            <p class="product-desc">Wake up to refreshed skin</p>
+            <div class="product-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span>(76)</span>
+            </div>
+            <div class="product-price">Rs 11,400</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80" alt="Bloom Eau de Parfum">
+            <div class="quick-view">Quick View</div>
+          </div>
+          <div class="product-info">
+            <h3>Bloom Eau de Parfum</h3>
+            <p class="product-desc">Floral & woody notes</p>
+            <div class="product-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><span>(52)</span>
+            </div>
+            <div class="product-price">Rs 19,500</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card">
+          <div class="product-badge">Sale</div>
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1607602132700-068258944f91?ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80" alt="Hydrating Face Mist">
+            <div class="quick-view">Quick View</div>
+          </div>
+          <div class="product-info">
+            <h3>Hydrating Face Mist</h3>
+            <p class="product-desc">With rosewater & aloe</p>
+            <div class="product-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><span>(87)</span>
+            </div>
+            <div class="product-price"><span class="original-price">Rs 9,600</span> Rs 7,680</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" alt="Gentle Cleansing Oil">
+            <div class="quick-view">Quick View</div>
+          </div>
+          <div class="product-info">
+            <h3>Gentle Cleansing Oil</h3>
+            <p class="product-desc">Melts away makeup & impurities</p>
+            <div class="product-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span>(143)</span>
+            </div>
+            <div class="product-price">Rs 10,200</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product-card">
+          <div class="product-badge">Limited</div>
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" alt="Luminous Highlighter">
+            <div class="quick-view">Quick View</div>
+          </div>
+          <div class="product-info">
+            <h3>Luminous Highlighter</h3>
+            <p class="product-desc">Buildable glow for all skin tones</p>
+            <div class="product-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><span>(68)</span>
+            </div>
+            <div class="product-price">Rs 8,700</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" alt="Repair Hair Mask">
+            <div class="quick-view">Quick View</div>
+          </div>
+          <div class="product-info">
+            <h3>Repair Hair Mask</h3>
+            <p class="product-desc">Deep conditioning treatment</p>
+            <div class="product-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><span>(112)</span>
+            </div>
+            <div class="product-price">Rs 10,800</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination, Featured Section, Footer, etc. remain unchanged -->
+      <!-- ... -->
+    </div>
+  </section>
+ <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="products.html#skincare">Skincare</a></li>
+          <li><a href="products.html#makeup">Makeup</a></li>
+          <li><a href="products.html#haircare">Haircare</a></li>
+          <li><a href="products.html#fragrance">Fragrance</a></li>
+          <li><a href="products.html#new">New Arrivals</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>About</h4>
+        <ul>
+          <li><a href="blog.html#our-story">Our Story</a></li>
+          <li><a href="blog.html#ingredients">Ingredients</a></li>
+          <li><a href="blog.html#sustainability">Sustainability</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Press</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="blog.html#faq">FAQs</a></li>
+          <li><a href="blog.html#shipping">Shipping & Returns</a></li>
+          <li><a href="blog.html#privacy">Privacy Policy</a></li>
+          <li><a href="blog.html#terms">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <div class="payment-methods">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-amex"></i>
+          <i class="fab fa-cc-paypal"></i>
+          <i class="fab fa-cc-apple-pay"></i>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 GlowHive Beauty Collective. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

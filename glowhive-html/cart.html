@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GlowHive - Your Shopping Cart</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <p>✨ Free shipping on orders over $50 | New customers get 15% off with code GLOW15</p>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo-container">
+        <h1 class="logo">GlowHive</h1>
+        <span class="logo-sub">Beauty Collective</span>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="blog.html">Blog</a>
+        <a href="cart.html" class="active">Cart</a>
+        <a href="login.html">Login</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Cart Hero -->
+  <section class="cart-hero">
+    <div class="container">
+      <h2>Your GlowHive Cart</h2>
+      <p>Review your beauty essentials before checkout</p>
+    </div>
+  </section>
+
+  <section class="cart-section">
+  <div class="container">
+    <div class="cart-container">
+      <div class="cart-items">
+        <div class="cart-header">
+          <h3>Your Items (2)</h3>
+          <a href="products.html" class="continue-shopping">
+            <i class="fas fa-chevron-left"></i> Continue Shopping
+          </a>
+        </div>
+
+        <!-- Cart Item 1 -->
+        <div class="cart-item">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80" alt="Radiant Glow Serum">
+          </div>
+          <div class="product-details">
+            <h4>Radiant Glow Serum</h4>
+            <p class="product-desc">Vitamin C enriched hydration</p>
+            <div class="product-meta">
+              <span class="product-sku">SKU: GH-SER-001</span>
+              <span class="in-stock">In Stock</span>
+            </div>
+          </div>
+          <div class="product-price">
+            <span class="current-price">Rs 15,540.00</span>
+            <span class="original-price">Rs 17,760.00</span>
+          </div>
+          <div class="product-quantity">
+            <button class="qty-btn minus"><i class="fas fa-minus"></i></button>
+            <input type="number" min="1" value="1" class="qty-input">
+            <button class="qty-btn plus"><i class="fas fa-plus"></i></button>
+          </div>
+          <div class="product-subtotal">
+            Rs 15,540.00
+          </div>
+          <div class="product-remove">
+            <button class="remove-btn"><i class="far fa-trash-alt"></i></button>
+          </div>
+        </div>
+
+        <!-- Cart Item 2 -->
+        <div class="cart-item">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1625772452859-1c03d5bf1137?ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" alt="Matte Lip Color">
+          </div>
+          <div class="product-details">
+            <h4>Matte Lip Color</h4>
+            <p class="product-desc">Long-wearing, nourishing formula</p>
+            <div class="product-meta">
+              <span class="product-sku">SKU: GH-LIP-012</span>
+              <span class="in-stock">In Stock</span>
+            </div>
+          </div>
+          <div class="product-price">
+            <span class="current-price">Rs 10,360.00</span>
+          </div>
+          <div class="product-quantity">
+            <button class="qty-btn minus"><i class="fas fa-minus"></i></button>
+            <input type="number" min="1" value="2" class="qty-input">
+            <button class="qty-btn plus"><i class="fas fa-plus"></i></button>
+          </div>
+          <div class="product-subtotal">
+            Rs 20,720.00
+          </div>
+          <div class="product-remove">
+            <button class="remove-btn"><i class="far fa-trash-alt"></i></button>
+          </div>
+        </div>
+
+        <!-- Cart Promo -->
+        <div class="cart-promo">
+          <div class="promo-input">
+            <input type="text" placeholder="Enter promo code">
+            <button class="btn btn-outline">Apply</button>
+          </div>
+          <div class="promo-applied">
+            <span>GLOW15 applied - 15% off</span>
+            <button class="remove-promo"><i class="fas fa-times"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Order Summary -->
+      <div class="order-summary">
+        <h3>Order Summary</h3>
+        <div class="summary-details">
+          <div class="summary-row">
+            <span>Subtotal (2 items)</span>
+            <span>Rs 36,260.00</span>
+          </div>
+          <div class="summary-row">
+            <span>Discount</span>
+            <span class="discount">-Rs 5,439.00</span>
+          </div>
+          <div class="summary-row">
+            <span>Shipping</span>
+            <span class="free-shipping">FREE</span>
+          </div>
+          <div class="summary-row">
+            <span>Tax</span>
+            <span>Rs 2,306.00</span>
+          </div>
+          <div class="summary-total">
+            <span>Total</span>
+            <span>Rs 33,127.00</span>
+          </div>
+        </div>
+        <button class="btn btn-primary checkout-btn" onclick="proceedToCheckout()">
+          <i class="fas fa-lock"></i> Proceed to Checkout
+        </button>
+        <div class="payment-methods">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-amex"></i>
+          <i class="fab fa-cc-paypal"></i>
+          <i class="fab fa-cc-apple-pay"></i>
+        </div>
+        <div class="security-note">
+          <i class="fas fa-shield-alt"></i> Secure checkout
+        </div>
+      </div>
+    </div>
+
+    <!-- Recommended Products -->
+    <div class="recommended-products">
+      <h3 class="section-title">Complete Your Routine</h3>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" alt="Gentle Cleansing Oil">
+          </div>
+          <div class="product-info">
+            <h4>Gentle Cleansing Oil</h4>
+            <p class="product-desc">Melts away makeup & impurities</p>
+            <div class="product-price">Rs 12,580.00</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1556228579-15a008a090f7?ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80" alt="Overnight Repair Cream">
+          </div>
+          <div class="product-info">
+            <h4>Overnight Repair Cream</h4>
+            <p class="product-desc">Wake up to refreshed skin</p>
+            <div class="product-price">Rs 14,060.00</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="products.html#skincare">Skincare</a></li>
+          <li><a href="products.html#makeup">Makeup</a></li>
+          <li><a href="products.html#haircare">Haircare</a></li>
+          <li><a href="products.html#fragrance">Fragrance</a></li>
+          <li><a href="products.html#new">New Arrivals</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>About</h4>
+        <ul>
+          <li><a href="blog.html#our-story">Our Story</a></li>
+          <li><a href="blog.html#ingredients">Ingredients</a></li>
+          <li><a href="blog.html#sustainability">Sustainability</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Press</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="blog.html#faq">FAQs</a></li>
+          <li><a href="blog.html#shipping">Shipping & Returns</a></li>
+          <li><a href="blog.html#privacy">Privacy Policy</a></li>
+          <li><a href="blog.html#terms">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <div class="payment-methods">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-amex"></i>
+          <i class="fab fa-cc-paypal"></i>
+          <i class="fab fa-cc-apple-pay"></i>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 GlowHive Beauty Collective. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function proceedToCheckout() {
+      // Save cart data to localStorage
+      const cartItems = [
+        {
+          id: "GH-SER-001",
+          name: "Radiant Glow Serum",
+          price: 42.00,
+          quantity: 1,
+          image: "https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80",
+          desc: "Vitamin C enriched hydration"
+        },
+        {
+          id: "GH-LIP-012",
+          name: "Matte Lip Color",
+          price: 28.00,
+          quantity: 2,
+          image: "https://images.unsplash.com/photo-1625772452859-1c03d5bf1137?ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80",
+          desc: "Long-wearing, nourishing formula"
+        }
+      ];
+      
+      localStorage.setItem('glowhive-cart', JSON.stringify(cartItems));
+      
+      // Save order summary
+      const orderSummary = {
+        subtotal: 98.00,
+        discount: 14.70,
+        shipping: 0,
+        tax: 6.23,
+        total: 89.53
+      };
+      localStorage.setItem('glowhive-order-summary', JSON.stringify(orderSummary));
+      
+      // Navigate to payment page
+      window.location.href = 'payment.html';
+    }
+
+    // Add to cart functionality for recommended products
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+      button.addEventListener('click', function() {
+        const productCard = this.closest('.product-card');
+        const productName = productCard.querySelector('h4').textContent;
+        alert(`${productName} added to cart!`);
+        
+        // Here you would normally add the product to the cart
+        // For now we'll just show an alert
+      });
+    });
+
+    // Quantity buttons functionality
+    document.querySelectorAll('.qty-btn').forEach(button => {
+      button.addEventListener('click', function(e) {
+        e.preventDefault();
+        const input = this.parentElement.querySelector('.qty-input');
+        let value = parseInt(input.value);
+        
+        if (this.classList.contains('minus') {
+          value = value > 1 ? value - 1 : 1;
+        } else {
+          value = value + 1;
+        }
+        
+        input.value = value;
+        // Here you would update the cart total
+      });
+    });
+
+    // Remove item functionality
+    document.querySelectorAll('.remove-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const cartItem = this.closest('.cart-item');
+        cartItem.remove();
+        // Here you would update the cart count and totals
+      });
+    });
+  </script>
+</body>
+</html>

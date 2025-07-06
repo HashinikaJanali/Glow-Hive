@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GlowHive - Book Your Beauty Consultation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <p>✨ First-time clients get 20% off their consultation! Use code GLOWCONSULT at checkout</p>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo-container">
+        <h1 class="logo">GlowHive</h1>
+        <span class="logo-sub">Beauty Collective</span>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="blog.html">Blog</a>
+        <a href="cart.html">Cart</a>
+        <a href="login.html">Login</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <button class="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Booking Hero -->
+  <section class="booking-hero">
+    <div class="container">
+      <div class="hero-content">
+        <h2>Personalized Beauty Consultation</h2>
+        <p>Get expert advice tailored to your unique skin needs and goals</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section class="booking-section">
+    <div class="container">
+      <div class="booking-container">
+        <div class="booking-image">
+          <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-1.2.1&auto=format&fit=crop&w=1480&q=80" alt="Beauty Consultation">
+        </div>
+        <div class="booking-form-container">
+          <h3 class="form-title">Book Your Appointment</h3>
+          <p class="form-subtitle">Complete the form below and we'll contact you to confirm</p>
+          
+          <form class="booking-form" action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required />
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your phone number" />
+              </div>
+              <div class="form-group">
+                <label for="service">Service Type</label>
+                <select id="service" name="service" required>
+                  <option value="">Select service</option>
+                  <option value="skin-analysis">Comprehensive Skin Analysis ($75)</option>
+                  <option value="routine-setup">Personalized Routine Setup ($95)</option>
+                  <option value="product-advice">Targeted Product Advice ($55)</option>
+                  <option value="full-consultation">Full Beauty Consultation ($120)</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Preferred Date</label>
+                <div class="date-input">
+                  <input type="date" id="date" name="date" required />
+                  <i class="far fa-calendar-alt"></i>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="time">Preferred Time</label>
+                <div class="time-input">
+                  <input type="time" id="time" name="time" required />
+                  <i class="far fa-clock"></i>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="notes">Special Requests</label>
+              <textarea id="notes" name="notes" placeholder="Any specific concerns or preferences?"></textarea>
+            </div>
+            
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary">
+                <i class="fas fa-calendar-check"></i> Book Consultation
+              </button>
+              <p class="form-note">We'll send a confirmation within 24 hours</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Consultation Benefits -->
+  <section class="benefits-section">
+    <div class="container">
+      <h3 class="section-title">Why Book With Us</h3>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-user-md"></i>
+          </div>
+          <h4>Expert Advice</h4>
+          <p>Our licensed estheticians have 10+ years experience in clinical skincare</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <h4>Personalized Approach</h4>
+          <p>Customized recommendations based on your unique skin profile</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <h4>Clean Products</h4>
+          <p>We only recommend non-toxic, cruelty-free formulations</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="consultation-testimonials">
+    <div class="container">
+      <h3 class="section-title">Client Success Stories</h3>
+      <div class="testimonial-slider">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>"The skin analysis completely transformed my routine. My acne has cleared up for the first time in years!"</p>
+            <div class="client-info">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Sarah J.">
+              <div>
+                <h5>Sarah J.</h5>
+                <span>Skin Analysis Client</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>"Worth every penny! The personalized routine saved me from wasting money on products that didn't work."</p>
+            <div class="client-info">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Michael T.">
+              <div>
+                <h5>Michael T.</h5>
+                <span>Routine Setup Client</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <h3 class="section-title">Consultation FAQs</h3>
+      <div class="faq-grid">
+        <div class="faq-card">
+          <div class="faq-question">
+            <h4>What should I prepare for my consultation?</h4>
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Come with clean skin (no makeup) and a list of any products you're currently using. It's helpful to note any skin concerns or goals beforehand.</p>
+          </div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-question">
+            <h4>How long does a consultation last?</h4>
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Initial consultations typically last 45-60 minutes. Follow-up sessions are usually 30 minutes.</p>
+          </div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-question">
+            <h4>Can I do a virtual consultation?</h4>
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Yes! We offer Zoom consultations with the same quality of service. You'll receive digital copies of all recommendations.</p>
+          </div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-question">
+            <h4>What's your cancellation policy?</h4>
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="faq-answer">
+            <p>We require 24 hours notice for cancellations. Late cancellations may incur a 50% fee.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="products.html#skincare">Skincare</a></li>
+          <li><a href="products.html#makeup">Makeup</a></li>
+          <li><a href="products.html#haircare">Haircare</a></li>
+          <li><a href="products.html#fragrance">Fragrance</a></li>
+          <li><a href="products.html#new">New Arrivals</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>About</h4>
+        <ul>
+          <li><a href="blog.html#our-story">Our Story</a></li>
+          <li><a href="blog.html#ingredients">Ingredients</a></li>
+          <li><a href="blog.html#sustainability">Sustainability</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Press</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="blog.html#faq">FAQs</a></li>
+          <li><a href="blog.html#shipping">Shipping & Returns</a></li>
+          <li><a href="blog.html#privacy">Privacy Policy</a></li>
+          <li><a href="blog.html#terms">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <div class="payment-methods">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-amex"></i>
+          <i class="fab fa-cc-paypal"></i>
+          <i class="fab fa-cc-apple-pay"></i>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 GlowHive Beauty Collective. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
